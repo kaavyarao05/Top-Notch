@@ -3,19 +3,70 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --major: #171717;
+  --minor: #ffffff;
+  --cyan: #52cde8;
+  --pink: pink;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
+
+body{
+  color: var(--minor);
+  background-color: var(--major);
   font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+  font-weight: bold;
+}
+
+.navdrop{
+  position: fixed;
+  right: 10px;
+  width: 150px;
+  background-color: var(--major);
+  border-radius: 5px;
+  transition: all;
+  transition-duration: 200ms;
+  display: grid;
+}
+
+.dropbutton{
+  color: white;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  transition: all;
+  transition-duration: 300ms;
+}
+.dropbutton:hover{
+  text-shadow: var(--pink) 40px 5px 35px;
+  color: var(--pink);
+  border-radius: 5px;
+  padding-left: 20px;
+}
+
+.navbar{
+  background-color: var(--major);
+}
+
+.navbutton{
+  display: none;
+  padding-left: 30px;
+  padding-top: 15px;
+  transition: all;
+  transition-duration: 300ms;
+}
+.navbutton:hover{
+  color: var(--pink);
+  font-size: 1.05em;
+  text-shadow:var(--pink) 0px 10px 18px;
+}
+
+@media(min-width:720px){
+  .navbutton{
+    display: flex;
+  }
+  .navdrop{
+    display: none;
+  }
 }
