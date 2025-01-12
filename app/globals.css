@@ -3,13 +3,20 @@
 @tailwind utilities;
 
 :root {
-  --major: #171717;
-  --minor: #ffffff;
+  --major: black;
+  --minor: white;
   --cyan: #52cde8;
   --pink: pink;
 }
 
-
+header{
+  color: white;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 
 body{
   color: var(--minor);
