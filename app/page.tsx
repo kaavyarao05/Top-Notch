@@ -1,6 +1,4 @@
-import Image from 'next/image';
 import banner from '@/public/banner.png';
-import bubbles from '@/public/bubbles.svg';
 
 export default function Home() {
   return (
