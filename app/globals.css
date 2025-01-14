@@ -38,12 +38,26 @@ h1{
   display: grid;
 }
 
+
+.menudropbutton{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
 .dropbutton{
+  display: none;
   color: white;
   padding-bottom: 7px;
   padding-left: 10px;
   transition: all;
   transition-duration: 300ms;
+}
+.activedropbutton{
+  display: flex;
+}
+.currentdropbutton{
+  color: var(--cyan);
 }
 .dropbutton:hover{
   text-shadow: var(--pink) 40px 5px 35px;
@@ -73,7 +87,10 @@ h1{
   .navbutton{
     display: flex;
   }
-  .navdrop{
+  .menudropbutton{
+    display: none;
+  }
+  .dropbutton{
     display: none;
   }
 }

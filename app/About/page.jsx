@@ -13,6 +13,17 @@ const About = () => {
      <h2 className='pt-20 pl-10 text-xl font-bold text-cyan font-mono'>
      The Story Behind Top Notch Cocktails and Mocktails
      </h2>
+     <div className='pl-14 pt-5 italic space-y-3 text-slate-200'>
+     <p>
+     At Top Notch Cocktails and Mocktails, we believe that every celebration deserves the perfect drink to match its spirit.
+     </p>
+     <p>
+      Based in Mangalore, we bring a blend of creativity, passion, and professionalism to elevate your special occasions.
+     </p>
+     <p>
+     From weddings to corporate events, sangeets, and rose ceremonies, our bespoke cocktail and mocktail counters promise to leave your guests delighted.
+     </p>
+     </div>
     </div>
   )
 }

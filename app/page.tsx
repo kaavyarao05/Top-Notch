@@ -6,7 +6,7 @@ export default function Home() {
      <header
      style={{backgroundImage: `url(${banner.src})`}}>
       <div className="drop-shadow-md mx-5 py-40 sm:py-52 md:py-72 duration-500">
-        <h1 className="text-3xl sm:text-5xl duration-300 text-center">Raise Your Glass to<br/>Unforgettable Moments!</h1>
+        <h1 className="font-extrabold text-4xl md:text-6xl xl-8xl duration-300 text-center">Raise Your Glass to<br/>Unforgettable Moments!</h1>
         <h3 className='italic mb-10'> Crafting unique cocktail and mocktail experiences for every celebration.</h3>
         <div className='space-y-12 grid w-fit mx-auto'>
             <a 
