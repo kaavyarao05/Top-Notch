@@ -24,6 +24,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 h1{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bold;
 }
 h3{
@@ -89,7 +90,6 @@ h3{
   box-shadow: white 0px 10px 30px;
 }
 .footer div div{
-
   width: fit-content;
   min-width: 300px;
 }
