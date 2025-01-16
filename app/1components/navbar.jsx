@@ -13,20 +13,7 @@ function handleClick(){
   }
 }
 
-function test(){
-  const patharr = usePathname().split('/');
-  const pathname=patharr[patharr.length-1];
-  var element=document.getElementById(pathname);
-  if (element==null){
-    console.log("help")
-    element=document.getElementById("Home");
-  }
-  console.log(pathname,element);
-  //element.classList.add("currentdropbutton");
-}
-
 const navbar = () => {
-  test();
   return (
     <div className='fixed grid-cols-2 pl-8 py-2 min-w-full navbar z-50'>
       <div className='flex'>

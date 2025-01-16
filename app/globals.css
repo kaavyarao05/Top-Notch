@@ -26,6 +26,9 @@ body{
 h1{
   font-weight: bold;
 }
+h3{
+  font-weight: bolder;
+}
 
 .navdrop{
   position: fixed;
@@ -81,6 +84,15 @@ h1{
   color: var(--pink);
   font-size: 1.05em;
   text-shadow:var(--pink) 0px 10px 18px;
+}
+.footer{
+  box-shadow: white 0px 10px 30px;
+}
+.footer div div{
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  min-width: 300px;
 }
 
 @media(min-width:720px){
