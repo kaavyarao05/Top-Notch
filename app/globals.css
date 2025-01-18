@@ -8,6 +8,10 @@
   --cyan: #52cde8;
   --pink: pink;
 }
+@font-face{
+  font-family: 'Vincendo';
+  src: url("../public/fonts/Vincendo.ttf");
+}
 
 header{
   color: white;
@@ -30,7 +34,6 @@ h1{
 h3{
   font-weight: bolder;
 }
-
 .navdrop{
   position: fixed;
   right: 10px;
@@ -41,7 +44,9 @@ h3{
   transition-duration: 200ms;
   display: grid;
 }
-
+.vincendoFont{
+  font-family: 'Vincendo';
+}
 
 .menudropbutton{
   position: absolute;
@@ -93,7 +98,6 @@ h3{
   width: fit-content;
   min-width: 300px;
 }
-
 @media(min-width:720px){
   .navbutton{
     display: flex;
