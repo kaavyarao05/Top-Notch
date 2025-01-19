@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div>
       <video autoPlay muted playsInline loop>
-          <source src="https://imagekit.io/player/embed/kaavyarao05/TopNotch/Lights.mp4?updatedAt=1737297266035&thumbnail=https%3A%2F%2Fik.imagekit.io%2Fkaavyarao05%2FTopNotch%2FLights.mp4%2Fik-thumbnail.jpg%3FupdatedAt%3D1737297266035&updatedAt=1737297266035"/>
+          <source src="https://ik.imagekit.io/kaavyarao05/TopNotch/topNotchBlue.mp4?updatedAt=1737224212933"/>
       </video>
       <header>
       <h1 className="-mt-[30%] vincendoFont font-extrabold text-4xl md:text-6xl duration-300 text-center">
