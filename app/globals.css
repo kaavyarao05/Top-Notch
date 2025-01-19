@@ -47,6 +47,23 @@ h3{
 .vincendoFont{
   font-family: 'Vincendo';
 }
+.cardcaption{
+  font: italic;
+  color: black;
+  text-align: center;
+}
+.card{
+  transition-duration: 300ms;
+  margin: 4px;
+  border-radius: 2px;
+  background-color: white;
+}
+.card:hover{
+  box-shadow: var(--cyan) 0px 0px 10px;
+}
+.card:hover .cardcaption{
+  transition-duration: 300ms;
+}
 
 .menudropbutton{
   position: absolute;
