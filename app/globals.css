@@ -50,11 +50,6 @@ h3{
 .vincendoFont{
   font-family: 'Vincendo';
 }
-.cardcaption{
-  font: italic;
-  color: black;
-  text-align: center;
-}
 .subheading{
   padding-top: 80px;
   font-size: 1.25rem /* 20px */;
@@ -64,13 +59,17 @@ h3{
   padding-left:11%;
 }
 .card{
+  font-family: monospace;
+  text-align: center;
+  color: black;
+  font-style: italic;
   transition-duration: 300ms;
   margin: 4px;
   border-radius: 2px;
   background-color: white;
 }
 .card:hover{
-  box-shadow: var(--cyan) 0px 0px 10px;
+  box-shadow: var(--cyan) 0px 0px 20px;
 }
 .card:hover .cardcaption{
   transition-duration: 300ms;

@@ -12,6 +12,7 @@ const Menu = () => {
       </h1>
       <div className='mb-[30%]'/>
       </header>    
+      <h2 className='subheading text-cyan'>Crafting Drinks That Tell a Story</h2>
     </div>
   )
 }

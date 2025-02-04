@@ -6,7 +6,7 @@ const card = ({caption,image,extracss}) => {
     <div className={extracss+' card'} >
         <Image src={image} alt={caption}
         className='border-white border-4 rounded'></Image>
-        <h1 className='italic cardcaption text-black text-center'>{caption}</h1>
+        <p>{caption}</p>
     </div>
   )
 }

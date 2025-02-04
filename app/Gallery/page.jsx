@@ -11,7 +11,8 @@ const Gallery = () => {
         GALLERY
       </h1>
       <div className='mb-[30%]'/>
-      </header>    
+      </header>
+      <h2 className='subheading text-pink'>Sip, Smile, Celebrate</h2>  
     </div>
   )
 }

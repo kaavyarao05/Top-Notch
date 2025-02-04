@@ -18,7 +18,7 @@ const Services = () => {
         <h2 className='subheading text-pink'>
      Events We Cater To
      </h2>
-     <div className='grid grid-cols-2 pl-[15%] pr-[11%] pt-5 text-slate-200'>
+     <div className='grid grid-cols-2 pl-[15%] pr-[11%] pt-5'>
      <Card caption="Weddings" image={weddingPhoto} extracss={"hover:rotate-1"}></Card>
      <Card caption="Cocktail Parties" image={fire} extracss={"hover:-rotate-1"}></Card>
      <Card caption="Weddings" image={weddingPhoto} extracss={"hover:scale-[101%] col-span-2"}></Card>

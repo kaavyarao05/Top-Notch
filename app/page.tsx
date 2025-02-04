@@ -5,10 +5,9 @@ export default function Home() {
     <div>
      <header
      style={{backgroundImage: `url(${banner.src})`}}>
-      <div className="drop-shadow-lg mx-5 py-36 sm:py-40 md:py-56 duration-500">
-        <h1 className="vincendoFont font-extrabold text-3xl md:text-5xl xl-xl duration-300 text-center">RAISE YOUR GLASS TO<br/>UNFORGETTABLE MOMENTS!</h1>
-        <h3 className='italic mb-10'> Crafting unique cocktail and mocktail experiences for every celebration.</h3>
-        <div className='space-y-12 grid md:flex md:space-y-0 md:gap-4 w-fit mx-auto'>
+      <div className="drop-shadow-lg mx-5 py-36 sm:py-40 md:py-56 duration-500 grid gap-12">
+        <h1 className="vincendoFont font-extrabold text-3xl md:text-5xl duration-300 text-center">RAISE YOUR GLASS TO<br/>UNFORGETTABLE MOMENTS!</h1>
+        <div className='space-y-5 grid md:flex md:space-y-0 md:gap-4 w-fit mx-auto'>
             <a 
             href='./Contact'
             className='homenavbutton'
