@@ -5,8 +5,11 @@
 :root {
   --major: black;
   --minor: white;
-  --cyan: #52cde8;
-  --pink: pink;
+  --cyan1: #52cde8;
+  --pink1: pink;
+
+  --cyan: rgb(54, 189, 247);
+  --pink:rgb(252, 91, 244);
 }
 @font-face{
   font-family: 'Vincendo';
@@ -52,6 +55,14 @@ h3{
   color: black;
   text-align: center;
 }
+.subheading{
+  padding-top: 80px;
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  font-weight:700;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  padding-left:11%;
+}
 .card{
   transition-duration: 300ms;
   margin: 4px;
@@ -63,6 +74,40 @@ h3{
 }
 .card:hover .cardcaption{
   transition-duration: 300ms;
+}
+
+.homenavbutton{
+  --tw-shadow-color: rgba(255, 255, 255, 0.606);
+  --tw-shadow: var(--tw-shadow-colored);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+  /*
+  --tw-gradient-from: var(--cyan) var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(255 255 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: var(--pink) var(--tw-gradient-to-position);
+  background-image: linear-gradient(to top, var(--tw-gradient-stops));
+  */
+  
+  color: var(--cyan);
+  background-color: black;
+
+  padding-top: 0.5rem /* 8px */;
+  padding-bottom: 0.5rem /* 8px */;
+  padding-left: 1.25rem /* 20px */;
+  padding-right: 1.25rem /* 20px */;
+
+  border-radius: 1rem /* 16px */;
+  transition-duration: 200ms;
+  font-family: 'Vincendo';
+  border-bottom: 2px solid white;
+}
+.homenavbutton:hover{
+  color: var(--pink);
+  border-bottom: 2px solid var(--pink);
+  --tw-shadow-color: color-mix(in srgb,var(--pink),transparent 40%);
+  --tw-shadow: var(--tw-shadow-colored);
 }
 
 .menudropbutton{

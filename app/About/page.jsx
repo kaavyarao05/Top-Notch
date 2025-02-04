@@ -13,7 +13,7 @@ const About = () => {
       </h1>
       <div className='mb-[30%]'/>
      </header>
-     <h2 className='pt-20 pl-[11%] text-xl font-bold text-cyan font-mono'>
+     <h2 className='subheading text-pink'>
      The Story Behind Top Notch Cocktails and Mocktails
      </h2>
      <div className='pl-[15%] pr-[11%] pt-5 italic space-y-3 text-slate-200'>
@@ -25,7 +25,7 @@ const About = () => {
      From weddings to corporate events, sangeets, and rose ceremonies, our bespoke cocktail and mocktail counters promise to leave your guests delighted.
      </p>
      </div>
-     <h2 className='pt-20 pl-[11%] text-xl font-bold text-cyan font-mono'>
+     <h2 className='subheading text-pink'>
      Why Choose Us?
      </h2>
      <div className='pl-[15%] pr-[11%] pt-5 italic space-y-3 text-slate-200'>

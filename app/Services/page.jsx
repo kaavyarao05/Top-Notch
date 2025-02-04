@@ -15,7 +15,7 @@ const Services = () => {
         </h1>
         <div className='mb-[30%]'/>
         </header>
-        <h2 className='pt-20 pl-[11%] text-xl font-bold font-mono'>
+        <h2 className='subheading text-pink'>
      Events We Cater To
      </h2>
      <div className='grid grid-cols-2 pl-[15%] pr-[11%] pt-5 text-slate-200'>
@@ -25,7 +25,9 @@ const Services = () => {
      <Card caption="Weddings" image={weddingPhoto} extracss={"hover:rotate-1"}></Card>
      <Card caption="Weddings" image={weddingPhoto} extracss={"hover:-rotate-1"}></Card>
      </div>
-      
+     <h2 className='pt-20 pl-[11%] text-xl font-bold font-mono'>
+     What We Offer
+     </h2>
     </div>
   )
 }
