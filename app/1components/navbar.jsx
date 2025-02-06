@@ -45,8 +45,8 @@ const navbar = () => {
     setCurrentPage()
   })
   return (
-    <div className='fixed flex pl-8 py-2 min-w-full navbar z-50 shadow-[rgba(250,250,250,0.1)] hover:shadow-[rgba(250,250,250,0.21)] shadow-lg duration-300 hover:shadow-xl'>
-      <div className='flex items-end'>
+    <div className='fixed grid-cols-2 pl-8 py-2 min-w-full navbar z-50 shadow-[rgba(250,250,250,0.1)] hover:shadow-[rgba(250,250,250,0.21)] shadow-lg duration-300 hover:shadow-xl'>
+      <div className='flex '>
         <a href='./'>
         <Image src={topNotch} width={60} alt='Top Notch logo' className='my-2 drop-shadow-md hover:drop-shadow-xl hover:rotate-12 duration-500'></Image>
       </a>
