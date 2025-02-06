@@ -116,12 +116,13 @@ h3{
 }
 
 .dropbutton{
+  font-family: monospace;
   display: none;
   color: white;
   padding-bottom: 7px;
   padding-left: 10px;
   transition: all;
-  transition-duration: 300ms;
+  transition-duration: 500ms;
 }
 .activedropbutton{
   display: flex;
@@ -135,21 +136,26 @@ h3{
   border-radius: 5px;
   padding-left: 20px;
 }
-
+.dropbutton:hover::before{
+  content: "➜\00a0";
+}
 .navbar{
   background-color: var(--major);
 }
 
 .navbutton{
+  font-family: monospace;
   display: none;
+  margin-top: auto;
+  margin-bottom: auto;
   padding-left: 30px;
   padding-top: 15px;
   transition: all;
   transition-duration: 300ms;
 }
 .navbutton:hover{
+  padding-bottom: 10px;
   color: var(--pink);
-  font-size: 1.05em;
   text-shadow:var(--pink) 0px 10px 18px;
 }
 .footer{

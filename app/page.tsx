@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </div>
      </header>
-     <h2 className='pt-20 pl-10 text-2xl'>About Us</h2>
+     <h2 className='font-mono text-xl italic font-semibold pt-10 px-10 text-center'>Crafting unique cocktail and mocktail experiences for every celebration.</h2>
     </div>
   );
 }

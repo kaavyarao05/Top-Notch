@@ -1,18 +1,14 @@
 import React from 'react'
 import TestimonialCard from '@/app/1components/testimonialCard.jsx'
+import Videoheader from '../1components/videoheader'
 
 const testimonials = () => {
   return (
     <div>
-      <video autoPlay muted playsInline loop>
-            <source src="https://ik.imagekit.io/kaavyarao05/TopNotch/nightbottletrick.MP4"/>
-      </video>
-      <header>
-      <h1 className="-mt-[30%] vincendoFont font-extrabold text-4xl md:text-6xl duration-300 text-center">
-          TESTIMONIALS
-      </h1>
-      <div className='mb-[30%]'/>
-      </header>
+      <Videoheader
+      link="https://ik.imagekit.io/kaavyarao05/TopNotch/nightbottletrick.MP4"
+      heading="TESTIMONIALS"
+      />
       <h2 className='subheading text-cyan'>What Out Clients Say</h2>
       <div className='p-10 sm:p-20 flex-1'>
         <TestimonialCard
