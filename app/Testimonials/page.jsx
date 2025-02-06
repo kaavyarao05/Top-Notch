@@ -10,10 +10,13 @@ const testimonials = () => {
       heading="TESTIMONIALS"
       />
       <h2 className='subheading text-cyan'>What Our Clients Say</h2>
-      <div className='p-10 sm:p-20 flex-1'>
+      <div className='p-10 sm:px-20 flex-1 lg:px-44'>
         <TestimonialCard
         review="Top Notch made our wedding extra special with their incredible cocktails. The guests were raving about the drinks all night!"
         reviewer="name"/>
+        <TestimonialCard
+        review="review2"
+        reviewer="name2"/>
       </div>
     </div>
   )
