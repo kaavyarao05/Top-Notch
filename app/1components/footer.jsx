@@ -18,10 +18,6 @@ const footer = () => {
             <h3>Working Hours</h3>
             <p>[Your Business Hours]</p>
           </div>
-          
-        </div>
-        <div className='w-full bg-cyan text-center'>
-            Connect with us
         </div>
     </div>
   )
