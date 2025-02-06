@@ -37,6 +37,44 @@ h1{
 h3{
   font-weight: bolder;
 }
+li{
+  margin-top: 15px;
+}
+li span{
+  color: white;
+  font-style:normal;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+li span::after{
+  content: "\000a\000a";
+}
+ul{
+  color: rgb(226 232 240);
+  list-style-type:square;
+
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem /* 12px */ * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem /* 12px */ * var(--tw-space-y-reverse));
+
+  padding-left: 15%;
+  padding-right: 11%;
+  padding-top: 1.5r;
+  font-style:italic;
+}
+.default{
+  color: rgb(226 232 240);
+  list-style-type:square;
+
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem /* 12px */ * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem /* 12px */ * var(--tw-space-y-reverse));
+
+  padding-left: 15%;
+  padding-right: 11%;
+  padding-top: 1.5r;
+  font-style:italic;
+}
 .navdrop{
   position: fixed;
   right: 10px;

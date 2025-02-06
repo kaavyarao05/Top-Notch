@@ -11,7 +11,7 @@ const About = () => {
      <h2 className='subheading text-pink'>
      The Story Behind Top Notch Cocktails and Mocktails
      </h2>
-     <div className='pl-[15%] pr-[11%] pt-5 italic space-y-3 text-slate-200'>
+     <div className='default'>
      <p>
      At Top Notch Cocktails and Mocktails, we believe that every celebration deserves the perfect drink to match its spirit.&nbsp;
      <span className='block md:hidden'/>
@@ -23,8 +23,8 @@ const About = () => {
      <h2 className='subheading text-pink'>
      Why Choose Us?
      </h2>
-     <div className='pl-[15%] pr-[11%] pt-5 italic space-y-3 text-slate-200'>
-      <ul className='list-disc'>
+     <div>
+      <ul>
             <li>Expert mixologists with years of experience</li>
             <li>Customized menus to suit your event theme</li>
             <li>Premium ingredients and exquisite presentation</li>

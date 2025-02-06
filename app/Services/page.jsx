@@ -22,9 +22,15 @@ const Services = () => {
       <Card caption="Weddings" image={weddingPhoto} extracss={"hover:rotate-1"}></Card>
       <Card caption="Weddings" image={weddingPhoto} extracss={"hover:-rotate-1"}></Card>
       </div>
-      <h2 className='pt-20 pl-[11%] text-xl font-bold font-mono'>
+      <h2 className='subheading text-pink'>
       What We Offer
       </h2>
+      <ul>
+        <li><span>Cocktail Counters:</span> Signature cocktails tailored to your taste.</li>
+        <li><span>Mocktail Counters:</span> Non-alcoholic beverages that are just as exquisite.</li>
+        <li><span>Customizable Menus:</span> Select from a wide range of drinks to suit your theme.</li>
+        <li><span>Themed Bars:</span> Unique setups to match your event’s ambiance.</li>
+      </ul>
     </div>
   )
 }
