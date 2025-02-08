@@ -45,23 +45,23 @@ const navbar = () => {
     setCurrentPage()
   })
   return (
-    <div className='fixed grid-cols-2 pl-8 py-2 min-w-full navbar z-50 shadow-[rgba(250,250,250,0.1)] hover:shadow-[rgba(250,250,250,0.21)] shadow-lg duration-300 hover:shadow-xl'>
-      <div className='flex '>
+    <div className='navbar'>
+      <div className='flex'>
         <a href='./'>
-        <Image src={topNotch} width={60} alt='Top Notch logo' className='my-2 drop-shadow-md hover:drop-shadow-xl hover:rotate-12 duration-500'></Image>
-      </a>
+          <Image src={topNotch} width={60} alt='Top Notch logo' className='my-2 mr-10 drop-shadow-md hover:drop-shadow-xl hover:rotate-12 duration-500'></Image>
+        </a>
         <a id="Home" className='navbutton' href='./'>Home</a>
         <a id="About" className='navbutton' href='./About'>About</a>
         <a id="Contact" className='navbutton' href='./Contact'>Contact</a>
-        <a id="Gallery" className='navbutton' href='./Gallery'>Gallery</a>
+        <a id="Gallery" className='navbutton pl-4' href='./Gallery'>Gallery</a>
         <a id="Menu" className='navbutton' href='./Menu'>Menu</a>
-        <a id="Services" className='navbutton' href='./Services'>Services</a>
-        <a id="Testimonials" className='navbutton' href='./Testimonials'>Testimonials</a>
+        <a id="Services" className='navbutton px-2' href='./Services'>Services</a>
+        <a id="Testimonials" className='navbutton px-4 pr-10' href='./Testimonials'>Testimonials</a>
         <a onClick={handleClick} className='menudropbutton'>
           <Image src={menuIcon} alt='menu icon' id="dropicon" width={30} className='invert duration-300'></Image>
         </a>
       </div>
-      <div className='navdrop shadow-sm'>
+      <div className='navdrop'>
         <a className='dropbutton' href='./'>Home</a>
         <a className='dropbutton' href='./About'>About</a>
         <a className='dropbutton' href='./Contact'>Contact</a>
