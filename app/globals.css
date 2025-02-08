@@ -81,6 +81,7 @@ ul{
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   
   position: fixed;
+  top: 90px;
   right: 10px;
   width: 150px;
   background-color: var(--major);
@@ -152,19 +153,20 @@ ul{
 }
 
 .menudropbutton{
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 30px;
 }
 
 .dropbutton{
+  padding-top: 7px;
+  padding-bottom: 7px;
   font-family: monospace;
   display: none;
   color: white;
-  padding-bottom: 7px;
   padding-left: 10px;
   transition: all;
-  transition-duration: 500ms;
+  transition-duration: 200ms;
 }
 .activedropbutton{
   display: flex;
@@ -176,14 +178,15 @@ ul{
   text-shadow: var(--pink) 40px 5px 35px;
   color: var(--pink);
   border-radius: 5px;
-  padding-left: 20px;
+  padding-left: 5px;
 }
+
 .dropbutton:hover::before{
-  content: "➜\00a0";
+  content: "\00a0➜\00a0";
 }
 .navbar{
+  display: grid;
   position: fixed;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   padding-left: 2rem;
   padding-top: 0.5rem /* 8px */;
   padding-bottom: 0.5rem /* 8px */;
@@ -210,10 +213,11 @@ ul{
 
 .navbutton{
   justify-content: center;
-  flex:1 50 100%;
+  flex:1 60 100%;
   font-family: monospace;
   display: none;
   margin: auto;
+  margin-bottom: 18px;
   padding: 1 1 100%;
   transition: all;
   transition-duration: 300ms;

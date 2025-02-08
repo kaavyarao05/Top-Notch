@@ -16,7 +16,7 @@ const g = typeof globalThis === "object"
 
 function addEventListeners(){
   g.window.addEventListener('click',(e)=>{
-    var dropicon=document.getElementById('dropicon')
+    const dropicon=document.getElementById('dropicon')
     if (!dropicon.contains(e.target)){  
       if(dropicon.classList.contains("scale-x-150")){
         // menu is expanded
@@ -46,10 +46,10 @@ const navbar = () => {
   })
   return (
     <div className='navbar'>
-      <div className='flex'>
-        <a href='./'>
-          <Image src={topNotch} width={60} alt='Top Notch logo' className='my-2 mr-10 drop-shadow-md hover:drop-shadow-xl hover:rotate-12 duration-500'></Image>
-        </a>
+      <a href='./' className=''>
+          <Image src={topNotch} width={60} alt='Top Notch logo' className='fixed left-4 hover:rotate-12 duration-500'></Image>
+      </a>
+      <div className='flex w-[800px] max-w-[800px] h-[64px] mx-auto'>
         <a id="Home" className='navbutton' href='./'>Home</a>
         <a id="About" className='navbutton' href='./About'>About</a>
         <a id="Contact" className='navbutton' href='./Contact'>Contact</a>
