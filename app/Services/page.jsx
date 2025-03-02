@@ -10,7 +10,7 @@ const Services = () => {
     <div>
       <Videoheader
       link="https://ik.imagekit.io/kaavyarao05/TopNotch/Lights.mp4?updatedAt=1737297266035"
-      heading="SERVICES"
+      heading="OUR SERVICES"
       />
       <h2 className='subheading text-pink'>
         Events We Cater To

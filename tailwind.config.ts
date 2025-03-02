@@ -14,6 +14,9 @@ export default {
         cyan:"var(--cyan)",
         pink:"var(--pink)"
       },
+      fontFamily:{
+        Vincendo:"/public/fonts/Vincendo.ttf"
+      }
     },
   },
   plugins: [],

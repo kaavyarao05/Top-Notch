@@ -1,11 +1,14 @@
 import React from 'react';
 import Videoheader from '@/app/1components/videoheader';
+import banner from '@/public/AboutUs.JPG';
 
+//https://ik.imagekit.io/kaavyarao05/TopNotch/topNotchBlue.mp4?updatedAt=1737224212933
 const About = () => {
   return (
     <div>
       <Videoheader
-      link="https://ik.imagekit.io/kaavyarao05/TopNotch/topNotchBlue.mp4?updatedAt=1737224212933"
+      photo={banner}
+      alt="Banner"
       heading="ABOUT"
       />
      <h2 className='subheading text-pink'>
