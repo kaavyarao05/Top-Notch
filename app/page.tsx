@@ -23,6 +23,10 @@ export default function Home() {
         <Image src={banner} height={461} alt="" className='hidden sm:block absolute baseimg mx-auto left-20 sm:left-32 right-0 top-[97px]'/>
         <Image src={bannersmall} height={461} alt="" className='sm:hidden absolute baseimg mx-auto left-20 right-0 top-[97px]'/>
       </div>
+      <div className='mt-[600px]'>
+        
+      </div>
+      <Footer/>
     </div>
   );
 }

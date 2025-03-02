@@ -138,14 +138,16 @@ ul{
   content: "";
   height: 3px;
   background-color: white;
-  width: 0%;
-  right: 0;
+  width: 95px;
+  
+  right: 0%;
   bottom: 6px;
   position: absolute;
   transition-duration: 300ms;
 }
 .homenavbutton:hover::after{
-  width: 70%;
+  right: 30px;
+  width: 20%;
 }
 .subtype{
   padding-left: 30px;
