@@ -180,9 +180,22 @@ ul{
 }
 .ServicesH2{
   text-align: center;
-  font-size: 5em;
+  font-size: 3.7em;
   margin-left: 10px;
   font-family: "Chicago Darling Serif Bold";
+}
+.ServicesDiv{
+  overflow-wrap: break-word;
+  text-align: center;
+  margin: 1.5rem /* 24px */;
+  font-size: 1em;
+  padding-left: 3%;
+  padding-right: 3%;
+  font-family: "TurisLight";
+  display: grid;
+  gap: 0.5rem /* 8px */;
+  transition-duration: 300ms;
+  font-style: italic;
 }
 .AboutH2{
   text-align: center;
@@ -213,6 +226,7 @@ ul{
 }
 
 .HomeAbout{
+  font-style: initial;
   font-family: 'Chicago Darling Serif Bold';
   font-size: 2em;
   position: relative;
@@ -329,7 +343,6 @@ ul{
 
   --tw-shadow-color: rgba(250,250,250,0.21);
   --tw-shadow: var(--tw-shadow-colored);
-
 }
 
 .navbutton{

@@ -19,7 +19,7 @@ export default function Home() {
             <h1 className='tfy ml-8'>NOTCH</h1>
           </div>
           <div className='sm:w-40 w-32'>
-            <a className='homenavbutton headingnav' href='/Contact'>Book now</a>
+            <a className='homenavbutton headingnav' href='#footer'>Book now</a>
             <a className='homenavbutton headingnav' href='/Services'>View Menu</a>
           </div>
         </div>
@@ -53,11 +53,22 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div >
-        <Image src={ourServices} alt=''
-        className='w-[70%] -my-5 absolute right-0 rounded-l-2xl -z-10'
+      <div className='flex my-10 '>
+        <div className='w-[55%] self-center'>
+          <h2 className='ServicesH2'>Our Services</h2>
+          <div className='ServicesDiv'>
+            <p>
+            From stylish shots to fashionable theme bars, we bring the ultimate cocktail experience to you.
+            </p>
+            <p>
+            We provide cocktail catering for private parties, weddings, and corporate events.
+            </p>
+            <a className='HomeAbout' href='/Services'>Menu</a>
+          </div>
+        </div>
+        <Image src={ourServices} alt='fruit platter'
+        className='max-w-[45%] w-fit inline-block rounded-l-2xl -z-10'
         />
-        <h2 className='ServicesH2'>Our Services</h2>
       </div>
       <Footer/>
     </div>

@@ -4,7 +4,7 @@ import Logo from '@/public/topNotch.png';
 
 const footer = () => {
   return (
-    <div className='mt-10 pb-5 footer font-mono'>
+    <div id="footer" className='mt-10 pb-5 footer font-mono bg-black'>
         <div className='grid sm:grid-cols-2 items-center'>
           <div className='py-7 px-5 italic text-center row-span-2 mx-auto text-[0.9rem]'>
               <Image src={Logo} width={80} alt='' className='mx-auto m-3 mb-7'/>
