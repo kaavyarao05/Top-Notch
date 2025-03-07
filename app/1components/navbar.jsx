@@ -28,11 +28,13 @@ function addEventListeners(){
 
 function handleClick(){
   var elements=document.getElementsByClassName("dropbutton");
-  var dropicon=document.getElementById('dropicon')
+  var dropicon=document.getElementById('dropicon');
+  var navdrop=document.getElementById('navdrop');
   for(var i=0;i<elements.length;i++){
     elements[i].classList.toggle("activedropbutton");
   }
-  dropicon.classList.toggle('scale-x-150')
+  dropicon.classList.toggle('scale-x-150');
+  navdrop.classList.toggle('hidden');
 }
 
 function setCurrentPage(pathname){
@@ -59,7 +61,7 @@ const navbar = () => {
           <Image src={menuIcon} alt='menu icon' id="dropicon" width={30} className='invert duration-300'></Image>
         </a>
       </div>
-      <div className='navdrop'>
+      <div className='navdrop hidden' id="navdrop">
         <a className='dropbutton' href='./'>Home</a>
         <a className='dropbutton' href='./About'>About</a>
         <a className='dropbutton' href='./Contact'>Contact</a>
