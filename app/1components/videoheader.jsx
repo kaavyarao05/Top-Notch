@@ -8,7 +8,7 @@ const videoheader = ({link, heading, photo,alt}) => {
           <source src={link}/>
         </video>:<Image src={photo} alt={alt}></Image>}
         <header>
-            <h1 className="-mt-[30%] tfy font-extrabold text-[3em] md:text-6xl duration-300 text-center">
+            <h1 className="-mt-[30%] font-extrabold text-[2em] md:text-6xl duration-300 text-center">
                 {heading}
             </h1>
         <div className='mb-[30%]'/>

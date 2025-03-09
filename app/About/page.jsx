@@ -1,6 +1,6 @@
 import React from 'react';
 import Videoheader from '@/app/1components/videoheader';
-import banner from '@/public/AboutUs.JPG';
+import banner from '@/public/HomeBanner.jpeg';
 import lightbg from "@/public/about/aboutbg.jpeg";
 import Image from 'next/image';
 
@@ -14,7 +14,7 @@ const About = () => {
       heading="ABOUT"
       />
       <div className='my-5 px-10'>
-        <h2 className='text-pink chicagoFont text-[3em]'>
+        <h2 className='text-pink text-[1.6em] italic'>
         The Story Behind Top Notch
         </h2>
         <div>
@@ -33,7 +33,7 @@ const About = () => {
         className='w-full my-10 '
         />
         </div>
-        <h2 className='text-pink chicagoFont text-[3em]'>
+        <h2 className='text-pink text-[3em]'>
         Why Choose Us?
         </h2>
         <div className='turisFont grid gap-5 italic p-7'>

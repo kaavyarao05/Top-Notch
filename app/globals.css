@@ -13,7 +13,11 @@
 }
 @font-face{
   font-family: 'Vincendo';
-  src: url("/public/fonts/Vincendo.ttf");
+  src: url("../public/fonts/Vincendo.ttf");
+}
+@font-face {
+  font-family: 'exmouth';
+  src: url("../public/fonts/exmouth_.ttf");
 }
 
 @font-face {
@@ -63,7 +67,8 @@ header{
     radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 0px),
     radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 0px);
     background-size: 510px 510px, 310px 310px, 190px 190px, 120px 120px;
-    background-position: 90 0, 40px 90px, 150px 390px, 55px 100px;
+    background-position: 0 0, 40px 80px, 150px 300px, 55px 100px;
+
   }
   100%{
     background-image:
@@ -75,10 +80,13 @@ header{
     background-position: 0 0, 40px 70px, 150px 300px, 55px 100px;
   }
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body{
   transition: all 300ms;
-  animation: starry 10s infinite;
+  animation:starry 30s infinite;
   background-color:black;
   background-image:
   radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 0px),
@@ -139,27 +147,37 @@ ul{
   width:fit-content;
   animation: 30s slider infinite;
   display: flex;
-  margin: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   overflow: auto;
   white-space: nowrap;
   scroll-behavior: smooth;
+  display: flex;
 }
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
+}
+.carousel::-webkit-scrollbar-thumb {
+  display: none;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 4px grey;
 }
+.carousel::-webkit-scrollbar-track {
+  display: none
+}
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: white; 
   border-radius: 10px;
+}
+.carousel::-webkit-scrollbar-thumb {
+  display: none;
 }
 
 /*animations for carousel*/
@@ -192,6 +210,9 @@ ul{
   font-family:'FTY SKORZHEN NCV Regular';
   font-weight: normal;
 }
+.exmouthFont{
+  font-family: "exmouth";
+}
 .turisFont{
   font-family: "TurisLight";
 }
@@ -213,9 +234,9 @@ ul{
 }
 .ServicesH2{
   text-align: center;
-  font-size: 3.7em;
+  font-size: 2.7em;
   margin-left: 10px;
-  font-family: "Chicago Darling Serif Bold";
+  font-family:'Times New Roman', Times, serif;
 }
 .ServicesDiv{
   overflow-wrap: break-word;
@@ -232,8 +253,8 @@ ul{
 }
 .AboutH2{
   text-align: center;
-  font-size: 3.5em;
-  font-family: "Chicago Darling Serif Bold";
+  font-size: 2.7em;
+  font-family: 'Times New Roman', Times, serif;
 }
 @media (min-width: 768px) {
   .AboutDiv {
