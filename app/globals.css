@@ -49,53 +49,11 @@ header{
   width: 100%;
 }
 
-@keyframes starry {
-  0%{
-    background-color: black;
-    background-image:
-    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 0px),
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 0px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 0px),
-    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 0px);
-    background-size: 500px 500px, 300px 300px, 200px 200px, 100px 100px;
-    background-position: 0 0, 40px 70px, 150px 300px, 55px 100px;
-  }
-  50%{
-    background-image:
-    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 0px),
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 0px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 0px),
-    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 0px);
-    background-size: 510px 510px, 310px 310px, 190px 190px, 120px 120px;
-    background-position: 0 0, 40px 80px, 150px 300px, 55px 100px;
-
-  }
-  100%{
-    background-image:
-    radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 0px),
-    radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 0px),
-    radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 0px),
-    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 0px);
-    background-size: 500px 500px, 300px 300px, 200px 200px, 100px 100px;
-    background-position: 0 0, 40px 70px, 150px 300px, 55px 100px;
-  }
-}
 html{
   scroll-behavior: smooth;
 }
 
 body{
-  transition: all 300ms;
-  animation:starry 30s infinite;
-  background-color:black;
-  background-image:
-  radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 0px),
-  radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 0px),
-  radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 0px),
-  radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 0px);
-  background-size: 500px 500px, 300px 300px, 200px 200px, 100px 100px;
-  background-position: 0 0, 40px 70px, 150px 300px, 55px 100px;
-
   width:100%;
   color: var(--minor);
   background-color: var(--major);
@@ -138,6 +96,12 @@ ul{
   display: flex;
 }
 
+
+.hgallerycontainer{
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
 
 /*figure tag containing carousel*/
 
@@ -343,6 +307,18 @@ ul{
   right: 30px;
 }
 
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20vh);
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
 
 .dropbutton{
   padding-top: 0px;

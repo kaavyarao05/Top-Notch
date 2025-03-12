@@ -55,17 +55,15 @@ const navbar = () => {
         <a id="Home" className='navbutton' href='./'>Home</a>
         <a id="About" className='navbutton' href='./About'>About</a>
         <a id="Contact" className='navbutton' href='/#footer'>Contact</a>
-        <a id="Gallery" className='navbutton pl-4' href='./Gallery'>Gallery</a>
         <a id="Services" className='navbutton px-2' href='./Services'>Services</a>
-        <a onClick={handleClick} className='menudropbutton'>
+        <button onClick={handleClick} className='menudropbutton'>
           <Image src={menuIcon} alt='menu icon' id="dropicon" width={30} className='invert duration-300'></Image>
-        </a>
+        </button>
       </div>
       <div className='navdrop hidden' id="navdrop">
         <a className='dropbutton' href='./'>Home</a>
         <a className='dropbutton' href='./About'>About</a>
         <a className='dropbutton' href='/#footer'>Contact</a>
-        <a className='dropbutton' href='./Gallery'>Gallery</a>
         <a className='dropbutton' href='./Services'>Services</a>
       </div>
     </div>

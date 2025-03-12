@@ -1,3 +1,6 @@
+"use client"
+
+import React from "react";
 import Footer from "@/app/1components/footer";
 import Image from 'next/image';
 
@@ -6,6 +9,8 @@ import ourStoryImg from '@/public/home/ourstory.jpg';
 import ourServices from '@/public/home/ourservices.jpeg';
 
 import glass from '@/public/home/banner.jpeg';
+
+import EndingCard from "@/app/1components/endingCard";
 
 export default function Home() {
   return (
@@ -30,7 +35,7 @@ export default function Home() {
       <div className='homeOurStory'>
         <Image
         src={ourStoryImg} alt="fruit platter with a sign saying 'bar' in the center"
-        className='w-[50%] rounded-e-2xl inline-block'
+        className='max-w-[50%] h-fit my-auto rounded-e-2xl inline-block'
         />
         <div className='w-fit self-center'>
           <h2 className='AboutH2'>Our Story</h2>
@@ -38,11 +43,11 @@ export default function Home() {
             <p>
             Founded by Kelvin Moras in 2022, Top Notch Cocktail started as a small idea with big ambitions.
             </p>
-            <p className='hidden sm:block'>
+            <p>
             Through dedication and innovation, we’ve grown into a beloved brand among cocktail enthusiasts.
             Our commitment to quality and creativity has fueled our expansion and success.
             </p>
-            <p className='hidden sm:block'>
+            <p>
               With every new creation, we continue to push the boundaries of mixology.
             </p>
             <p>
@@ -57,7 +62,7 @@ export default function Home() {
           <h2 className='ServicesH2'>Our Services</h2>
           <div className='ServicesDiv'>
             <p>
-            From stylish shots to fashionable theme bars, we bring the ultimate cocktail experience to you.
+            From stylish shots to Comprehensively outfitted bar setup , trained bartenders  we bring ultimate cocktail experience to you
             </p>
             <p>
             We provide cocktail catering for private parties, weddings, and corporate events.
@@ -66,8 +71,12 @@ export default function Home() {
           </div>
         </div>
         <Image src={ourServices} alt='fruit platter'
-        className='max-w-[45%] w-fit inline-block rounded-l-2xl -z-10'
+        className='max-w-[45%] inline-block rounded-l-2xl -z-10'
         />
+      </div>
+      <div className="gap-4 grid">
+      <EndingCard title="Hygiene" content="We uphold the highest hygiene standards by sanitizing all equipment, washing glassware at optimal temperatures, maintaining precise ingredient storage conditions, and adhering to strict cleanliness protocols."/>
+      <EndingCard title="Party License Assistance" content="Setting up a bar for any event requires legal authorization. Top Notch will guide to ensure a seamless and compliant licensing process."/>
       </div>
       <Footer/>
     </div>

@@ -16,7 +16,22 @@ import Counters8 from '@/public/themedCounters/8.jpeg';
 import Counters9 from '@/public/themedCounters/9.jpeg';
 import Counters10 from '@/public/themedCounters/10.jpeg';
 
-import Flair1 from "@/public/flairs/fire.JPG";
+import Flair1 from "@/public/flairs/flairs1.JPG";
+import Flair2 from "@/public/flairs/flairs2.jpeg";
+import Flair3 from "@/public/flairs/flairs3.jpeg";
+
+import aol1 from '@/public/artOfLiquid/aol1.jpeg';
+import aol2 from '@/public/artOfLiquid/aol2.jpeg';
+import aol3 from '@/public/artOfLiquid/aol3.jpeg';
+import aol4 from '@/public/artOfLiquid/aol4.jpeg';
+import aol5 from '@/public/artOfLiquid/aol5.jpeg';
+import aol6 from '@/public/artOfLiquid/aol6.jpeg';
+
+import emp1 from '@/public/employees/emp1.jpeg';
+import emp2 from '@/public/employees/emp2copy.jpeg';
+import emp3 from '@/public/employees/emp3.jpeg';
+import emp4 from '@/public/employees/emp4.jpeg';
+
 
 const g = typeof globalThis === "object"
     ? globalThis
@@ -73,6 +88,60 @@ const FlairsAndShooters=[
   {
     src:Flair1,
     alt:""
+  },
+  {
+    src:Flair2,
+    alt:""
+  },
+  {
+    src:Flair3,
+    alt:""
+  }
+]
+
+const artOfLiquid=[
+  {
+    src:aol1,
+    alt:""
+  },
+  {
+    src:aol2,
+    alt:""
+  },
+  {
+    src:aol3,
+    alt:""
+  },
+  {
+    src:aol4,
+    alt:""
+  },
+  {
+    src:aol5,
+    alt:""
+  },
+  {
+    src:aol6,
+    alt:""
+  }
+]
+
+const bartenders=[
+  {
+    src:emp1,
+    alt:""
+  },
+  {
+    src:emp2,
+    alt:""
+  },
+  {
+    src:emp4,
+    alt:""
+  },
+  {
+    src:emp3,
+    alt:""
   }
 ]
 
@@ -127,10 +196,10 @@ const Services = () => {
       heading="OUR SERVICES"
       />
       <div>
-        <HGallery caption="Themed Counters" arr={themedCounters}/>
-        <HGallery caption="Flairs &amp; Shooters" arr={FlairsAndShooters}/>
-        <HGallery caption="The Art of Liquid" arr={themedCounters}/>
-        <HGallery caption="Our Bartenders" arr={themedCounters}/>
+        <HGallery caption="Themed Counters" arr={themedCounters} heightClass={"h-[200px] md:h-[270px] xl:h-[378px]"}/>
+        <HGallery caption="Flairs &amp; Shooters" arr={FlairsAndShooters} heightClass={"h-[515px] md:h-[695px] xl:h-[974px]"}/>
+        <HGallery caption="The Art of Liquid" arr={artOfLiquid} heightClass={"h-[515px] md:h-[695px] xl:h-[974px]"}/> 
+        <HGallery caption="Exclusive Team" arr={bartenders} heightClass={"h-[200px] md:h-[270px] xl:h-[378px]"}/>
       </div>
     </div>
   )
