@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react';
+import React from 'react';
 import Image from 'next/image';
 
 import Videoheader from '../1components/videoheader';
@@ -33,7 +33,7 @@ import aol7 from '@/public/artOfLiquid/aol7.jpeg';
 import aol8 from '@/public/artOfLiquid/aol8.jpeg';
 
 import emp1 from '@/public/employees/emp1.jpeg';
-import emp2 from '@/public/employees/emp2copy.jpeg';
+import emp2 from '@/public/employees/emp2.jpeg';
 import emp3 from '@/public/employees/emp3.jpeg';
 import emp4 from '@/public/employees/emp4.jpeg';
 import emp5 from  '@/public/employees/emp.jpeg';

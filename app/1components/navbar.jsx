@@ -1,9 +1,8 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
-import topNotch from '@/public/topNotch.png';
-import menuIcon from '@/public/menu.svg';
-import { usePathname } from "next/navigation";
+import topNotch from '@/public/navbar/topNotch.png';
+import menuIcon from '@/public/navbar/menu.svg';
 
 const g = typeof globalThis === "object"
     ? globalThis
@@ -36,15 +35,9 @@ function handleClick(){
   dropicon.classList.toggle('scale-x-150');
   navdrop.classList.toggle('hidden');
 }
-
-function setCurrentPage(pathname){
-  console.log(pathname);
-}
-
 const navbar = () => {
   React.useEffect(()=>{
     addEventListeners();
-    setCurrentPage()
   })
   return (
     <div className='navbar'>

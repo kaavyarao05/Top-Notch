@@ -1,6 +1,6 @@
 import React from 'react';
 import Videoheader from '@/app/1components/videoheader';
-import banner from '@/public/HomeBanner.jpeg';
+import banner from '@/public/about/HomeBanner.jpeg';
 import lightbg from "@/public/about/aboutbg.jpeg";
 import Image from 'next/image';
 

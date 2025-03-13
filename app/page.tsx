@@ -4,7 +4,7 @@ import React from "react";
 import Footer from "@/app/1components/footer";
 import Image from 'next/image';
 
-import windowsvg from '@/public/bannerwindowwhite.svg';
+import windowsvg from '@/public/home/bannerwindowwhite.svg';
 import ourStoryImg from '@/public/home/ourstory.jpg';
 import ourServices from '@/public/home/ourservices.jpeg';
 

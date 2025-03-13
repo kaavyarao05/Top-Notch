@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import Logo from '@/public/topNotch.png';
+import Logo from '@/public/navbar/topNotch.png';
 
 const footer = () => {
   return (
