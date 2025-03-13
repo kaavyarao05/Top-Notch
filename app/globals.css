@@ -191,12 +191,14 @@ ul{
 }
 
 .AboutDiv{
+  --xpad:3%;
   overflow-wrap: break-word;
   text-align: center;
-  margin: 1.5rem /* 24px */;
+  margin-top: 1.5rem /* 24px */;
+  margin-bottom: 1.5rem /* 24px */;
   font-size: 0.7em;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: var(--xpad);
+  padding-right: var(--xpad);
   font-family: "TurisLight";
   display: grid;
   gap: 0.5rem /* 8px */;
@@ -220,16 +222,27 @@ ul{
   }
 }
 .ServicesDiv{
+  --xpad:3%;
   overflow-wrap: break-word;
   text-align: center;
   margin: 1.5rem /* 24px */;
-  padding-left: 3%;
-  padding-right: 3%;
+  padding-left: var(--xpad);
+  padding-right: var(--xpad);
   font-family: "TurisLight";
   display: grid;
   gap: 0.5rem /* 8px */;
   transition-duration: 300ms;
   font-style: italic;
+}
+@media(min-width:384px){
+  .ServicesDiv,.AboutDiv{
+    --xpad:10%
+  }
+}
+@media(min-width:768px){
+  .ServicesDiv{
+    --xpad:20%
+  }
 }
 .HomeAbout{
   font-style: initial;

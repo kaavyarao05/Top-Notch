@@ -3,7 +3,7 @@ import React from 'react';
 
 const endingCard=({title,content})=>{
     return(
-      <div id="card" className="skew-x-3 max-w-[90%] relative text-center rounded-lg w-fit px-10 m-auto mx-4 py-14">
+      <div id="card" className="skew-x-3 relative text-center rounded-lg w-fit px-[10%] md:px-[20%] m-auto mx-4 py-14">
         <h3 className="text-red-600 tfy text-[2em]">
           {title}
         </h3>

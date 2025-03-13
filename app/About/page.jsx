@@ -13,7 +13,7 @@ const About = () => {
       alt="Banner"
       heading="ABOUT"
       />
-      <div className='my-5 px-10'>
+      <div className='my-5 px-10 md:px-[10%] md:text-[1.1em]'>
         <h2 className='text-red-500 tfy text-[1.5em] italic'>
         The Story Behind Top Notch
         </h2>
@@ -30,7 +30,7 @@ const About = () => {
             </p>
           </div>
         <Image src={lightbg} alt="glasses on a table"
-        className='w-full my-10 rounded-lg'
+        className='w-full my-10 md:w-[70%] md:mx-auto rounded-lg'
         />
         </div>
         <h2 className='text-red-500 tfy text-[1.5em] italic'>
