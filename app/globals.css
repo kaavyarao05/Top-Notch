@@ -57,10 +57,8 @@ body{
   width:100%;
   color: var(--minor);
   background-color: var(--major);
-  font-family: Arial, Helvetica, sans-serif;
 }
 h1{
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-weight: bold;
 }
 h3{
@@ -73,7 +71,6 @@ li span{
   color: white;
   font-style:normal;
   font-weight: bold;
-  font-family: 'Courier New', Courier, monospace;
 }
 li span::after{
   content: "\000a\000a";
@@ -184,6 +181,15 @@ ul{
   font-family: 'Chicago Darling Serif Bold';
 }
 
+.extraText{
+  display: none;
+}
+@media(min-width:400px){
+  .extraText{
+    display: block;
+  }
+}
+
 .AboutDiv{
   overflow-wrap: break-word;
   text-align: center;
@@ -195,18 +201,28 @@ ul{
   display: grid;
   gap: 0.5rem /* 8px */;
   transition-duration: 300ms;
+  font-style: italic;
 }
 .ServicesH2{
   text-align: center;
   font-size: 2.7em;
   margin-left: 10px;
-  font-family:'Times New Roman', Times, serif;
+}
+@media(max-width:400px){
+  .ServicesH2{
+    font-size: 1.7em;
+  }
+  .ServicesDiv{
+    font-size: 0.9em;
+  }
+  .AboutDiv{
+    font-size: 0.8em;
+  }
 }
 .ServicesDiv{
   overflow-wrap: break-word;
   text-align: center;
   margin: 1.5rem /* 24px */;
-  font-size: 1em;
   padding-left: 3%;
   padding-right: 3%;
   font-family: "TurisLight";
@@ -215,34 +231,6 @@ ul{
   transition-duration: 300ms;
   font-style: italic;
 }
-.AboutH2{
-  text-align: center;
-  font-size: 2.7em;
-  font-family: 'Times New Roman', Times, serif;
-}
-@media (min-width: 768px) {
-  .AboutDiv {
-      font-size: 0.9em;
-  }
-}
-@media (max-width: 768px) {
-  .AboutDiv {
-      font-size: 0.7em;
-      margin: 0.7em;
-  }
-}
-@media (max-width: 350px) {
-  .AboutDiv {
-      font-size: 0.7em;
-      padding-left: 0;
-      padding-right: 0;
-      margin: 0.5rem;
-  }
-  .AboutH2{
-    font-size: 3.0rem;
-  }
-}
-
 .HomeAbout{
   font-style: initial;
   font-family: 'Chicago Darling Serif Bold';
@@ -289,7 +277,6 @@ ul{
   padding-left: 30px;
   font-size: 1.1em;
   margin-top: 30px;
-  font-family: 'Courier New', Courier, monospace;
 }
 
 .baseimg{

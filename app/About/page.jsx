@@ -14,7 +14,7 @@ const About = () => {
       heading="ABOUT"
       />
       <div className='my-5 px-10'>
-        <h2 className='text-pink text-[1.6em] italic'>
+        <h2 className='text-red-500 tfy text-[1.5em] italic'>
         The Story Behind Top Notch
         </h2>
         <div>
@@ -30,10 +30,10 @@ const About = () => {
             </p>
           </div>
         <Image src={lightbg} alt="glasses on a table"
-        className='w-full my-10 '
+        className='w-full my-10 rounded-lg'
         />
         </div>
-        <h2 className='text-pink text-[3em]'>
+        <h2 className='text-red-500 tfy text-[1.5em] italic'>
         Why Choose Us?
         </h2>
         <div className='turisFont grid gap-5 italic p-7'>

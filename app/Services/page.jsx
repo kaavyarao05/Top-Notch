@@ -19,6 +19,9 @@ import Counters10 from '@/public/themedCounters/10.jpeg';
 import Flair1 from "@/public/flairs/flairs1.JPG";
 import Flair2 from "@/public/flairs/flairs2.jpeg";
 import Flair3 from "@/public/flairs/flairs3.jpeg";
+import Flair4 from "@/public/flairs/flairs4.jpeg";
+import Flair5 from "@/public/flairs/flairs5.jpeg";
+import Flair6 from "@/public/flairs/flairs6.jpeg";
 
 import aol1 from '@/public/artOfLiquid/aol1.jpeg';
 import aol2 from '@/public/artOfLiquid/aol2.jpeg';
@@ -26,11 +29,14 @@ import aol3 from '@/public/artOfLiquid/aol3.jpeg';
 import aol4 from '@/public/artOfLiquid/aol4.jpeg';
 import aol5 from '@/public/artOfLiquid/aol5.jpeg';
 import aol6 from '@/public/artOfLiquid/aol6.jpeg';
+import aol7 from '@/public/artOfLiquid/aol7.jpeg';
+import aol8 from '@/public/artOfLiquid/aol8.jpeg';
 
 import emp1 from '@/public/employees/emp1.jpeg';
 import emp2 from '@/public/employees/emp2copy.jpeg';
 import emp3 from '@/public/employees/emp3.jpeg';
 import emp4 from '@/public/employees/emp4.jpeg';
+import emp5 from  '@/public/employees/emp.jpeg';
 
 
 const g = typeof globalThis === "object"
@@ -96,6 +102,18 @@ const FlairsAndShooters=[
   {
     src:Flair3,
     alt:""
+  },
+  {
+    src:Flair4,
+    alt:""
+  },
+  {
+    src:Flair5,
+    alt:""
+  },
+  {
+    src:Flair6,
+    alt:""
   }
 ]
 
@@ -123,6 +141,14 @@ const artOfLiquid=[
   {
     src:aol6,
     alt:""
+  },
+  {
+    src:aol7,
+    alt:""
+  },
+  {
+    src:aol8,
+    alt:""
   }
 ]
 
@@ -137,6 +163,10 @@ const bartenders=[
   },
   {
     src:emp4,
+    alt:""
+  },
+  {
+    src:emp5,
     alt:""
   },
   {
